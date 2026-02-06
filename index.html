@@ -7,7 +7,15 @@
     <style>
         :root { --primary: #2ecc71; --dark: #2c3e50; --light: #ffffff; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; margin: 0; color: var(--dark); }
-        .profile-img { width: 100px; height: 100px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .profile-img { 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; /* Toto zabezpečí, že obrázok sa nedeformuje */
+    margin-bottom: 15px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    border: 3px solid var(--primary); /* Voliteľné: zelený okraj okolo fotky */
+}
         h1 { font-size: 1.5rem; margin-bottom: 5px; }
         p { font-size: 1rem; color: #666; text-align: center; max-width: 300px; margin-bottom: 30px; }
         .links { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 15px; }
@@ -18,7 +26,7 @@
 </head>
 <body>
 
-    <div class="profile-img">💰</div>
+    <img src="OptimalizujSaLogo.png" alt="Logo" class="profile-img">
     <h1>Optimalizuj sa</h1>
     <p>Učíme ako optimalizovať výdavky a žiť lepšie za menej.</p>
 
