@@ -2,19 +2,35 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Optimalizuj sa | Už čoskoro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimalizuj sa | Všetky tipy na jednom mieste</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f4; margin: 0; }
-        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #2ecc71; }
-        p { color: #555; }
+        :root { --primary: #2ecc71; --dark: #2c3e50; --light: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; margin: 0; color: var(--dark); }
+        .profile-img { width: 100px; height: 100px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { font-size: 1.5rem; margin-bottom: 5px; }
+        p { font-size: 1rem; color: #666; text-align: center; max-width: 300px; margin-bottom: 30px; }
+        .links { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 15px; }
+        .link { background: var(--light); border: 2px solid var(--primary); color: var(--dark); padding: 15px; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .link:hover { background: var(--primary); color: white; transform: translateY(-2px); }
+        .footer { margin-top: auto; padding-top: 50px; font-size: 0.8rem; color: #999; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Optimalizuj sa</h1>
-        <p>Pracujeme na niečom, čo ti ušetrí!</p>
-        <p>Sleduj nás na sociálnych sieťach!</p>
+
+    <div class="profile-img">💰</div>
+    <h1>Optimalizuj sa</h1>
+    <p>Učíme ako optimalizovať výdavky a žiť lepšie za menej.</p>
+
+    <div class="links">
+        <a href="https://tiktok.com/@optimalizujsa" class="link">TikTok (Denné tipy)</a>
+        <a href="https://instagram.com/optimalizujsa" class="link">Instagram</a>
+        <a href="https://youtube.com/@optimalizujsa" class="link">YouTube Shorts</a>
     </div>
+
+    <div class="footer">
+        &copy; 2026 Optimalizuj sa. Všetky práva vyhradené.
+    </div>
+
 </body>
 </html>
